@@ -1,0 +1,36 @@
+.item-weather {
+  box-shadow: 0 1px 1px rgba(28, 27, 27, 0.025),
+    0 2px 2px hsl(0deg 0% 0% / 0.05), 0 3.2px 3.2px hsl(0deg 0% 0% / 0.05),
+    0 4px 4px hsl(0deg 0% 0% / 0.05), 0 10px 10px hsl(0deg 0% 0% / 0.05);
+  border-radius: 5px;
+  background-color: rgb(137, 136, 136);
+  margin-top: 1rem;
+}
+
+.card-content-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+}
+
+.card-content-top p {
+  color: #fff;
+}
+
+.weather-description {
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+}
+
+.city {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.icon-weather {
+  width: 100px;
+}

@@ -1,0 +1,29 @@
+/* color pallette (light tot dark):
+    1) #FFFAD7 background
+    2) #FCDDB0 cards?
+    3) #FF9F9F other elements
+    4) #E97777 darkest
+
+    header background color: #fff7ec
+
+    1) font color: #3c250c
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", Arial !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fffad7;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
