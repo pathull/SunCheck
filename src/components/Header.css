@@ -1,5 +1,5 @@
 .header-container {
-  background-color: #fff7ec;
+  background-color: rgb(24, 24, 24);
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -12,11 +12,17 @@
 }
 
 .logo-img {
-  width: 300px;
-  height: 70px;
+  width: 65px;
+  height: 65px;
+}
+
+.header-title {
+  color: #fff;
+  font-size: 42px;
 }
 
 .header-text {
   font-size: 14px;
   font-style: italic;
+  color: #fff;
 }

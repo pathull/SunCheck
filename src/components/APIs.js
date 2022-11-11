@@ -7,7 +7,7 @@ const cityApiGet = {
 };
 
 const CITY_SEARCH_URL = 'https://wft-geo-db.p.rapidapi.com/v1/geo'
+const WEATHER_URL = 'https://api.openweathermap.org/data/2.5'
+const WEATHER_KEY = '47674e3e4fc53e98ab3e770fde487c02'
 
-
-
-export { cityApiGet, CITY_SEARCH_URL }
+export { cityApiGet, CITY_SEARCH_URL, WEATHER_URL, WEATHER_KEY }

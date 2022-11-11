@@ -1,0 +1,11 @@
+.item-weather-background {
+  background-color: rgb(100, 100, 100);
+}
+
+.icon-weather-forecast {
+  width: 50px;
+}
+
+.forecast-temp {
+  font-size: 24px;
+}
