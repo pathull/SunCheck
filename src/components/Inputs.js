@@ -1,7 +1,7 @@
 import React from 'react'
 import './Inputs.css'
 
-export default function Inputs({ data }) {
+export default function Inputs() {
 
   return (
     <div className='input-container'>

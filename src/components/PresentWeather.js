@@ -3,6 +3,8 @@ import Inputs from './Inputs'
 
 
 export default function PresentWeather({ data }) {
+
+
   return (
     <div className='item-weather'>
       <div className='card-content'>

@@ -97,7 +97,8 @@
 }
 .react-calendar__tile--now:enabled:hover,
 .react-calendar__tile--now:enabled:focus {
-  background: #fff;
+  background: rgb(229, 229, 229);
+  transition: 0.2s;
 }
 .react-calendar__tile--hasActive {
   background: #fff;

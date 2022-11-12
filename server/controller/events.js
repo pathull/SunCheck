@@ -13,9 +13,8 @@ exports.getAllEvents = async (req, res) => {
 exports.postOne = async (req, res) => {
   try {
     const newEvent = new Event({
-      title: req.body.title,
+      check: req.body.check,
       date: req.body.date,
-      venue: req.body.venue,
     });
 
     await newEvent.save();

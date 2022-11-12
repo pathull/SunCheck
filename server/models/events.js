@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const eventSchema = new Schema({
-  title: {
+  check: {
     type: String,
     trim: true
   },
@@ -10,10 +10,6 @@ const eventSchema = new Schema({
     type: Date,
     default: new Date().toISOString()
   },
-  venue: {
-    type: String,
-    trim: true
-  }
 
 });
 
