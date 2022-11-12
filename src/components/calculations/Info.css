@@ -1,0 +1,13 @@
+.info-container {
+  width: 600px;
+  padding-left: 2.2rem;
+}
+
+.info {
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  list-style: circle;
+}

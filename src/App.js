@@ -5,7 +5,9 @@ import Search from './components/search-city';
 import { WEATHER_URL, WEATHER_KEY } from './components/APIs'
 import PresentWeather from './components/PresentWeather';
 import Forecast from './components/Forecast';
-import Calculations from './components/Calculations';
+import Info from './components/calculations/Info';
+import Calendarr from './components/calculations/Calendar';
+
 
 
 function App() {
@@ -31,7 +33,10 @@ function App() {
   return (
     <div>
       <Header />
-      <Calculations />
+      <div className='dash-container'>
+        <Info />
+        <Calendarr />
+      </div>
       <div className='hero-section'>
         <div className="weather-container">
           <Search onSearch={onSearchChangesHandler} />
