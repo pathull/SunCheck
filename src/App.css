@@ -3,13 +3,13 @@
 @import "../node_modules/@syncfusion/ej2-react-calendars/styles/material.css";
 
 .weather-container {
-  max-width: 95%;
+  max-width: 90%;
   margin: auto;
   background-color: #fffad7;
 }
 
 .dash-container {
-  max-width: 95%;
+  max-width: 90%;
   margin: auto;
   margin-bottom: 1rem;
   background-color: #fff;
