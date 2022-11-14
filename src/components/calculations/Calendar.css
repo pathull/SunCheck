@@ -6,6 +6,7 @@
   font-family: "Roboto";
   line-height: 1.125em;
   border-radius: 10px;
+  height: 300px;
 }
 .react-calendar--doubleView {
   width: 700px;
