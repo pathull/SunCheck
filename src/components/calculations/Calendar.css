@@ -93,7 +93,7 @@
   background-color: #fff;
 }
 .react-calendar__tile--now {
-  background: rgb(255, 144, 26);
+  background: orange;
 }
 .react-calendar__tile--now:enabled:hover,
 .react-calendar__tile--now:enabled:focus {

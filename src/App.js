@@ -7,12 +7,15 @@ import PresentWeather from './components/PresentWeather';
 import Forecast from './components/Forecast';
 import Info from './components/calculations/Info';
 import Calendarr from './components/calculations/Calendar';
+import IU from './components/calculations/IU';
+import Inputs from './components/Inputs';
 
 
 
 function App() {
   const [weather, setWeather] = useState(null)
   const [forecast, setForecast] = useState(null)
+  const [iuCount, setIuCount] = useState(0)
 
   const onSearchChangesHandler = (data) => {
     const [lat, lon] = data.value.split(' ');
@@ -29,16 +32,22 @@ function App() {
       .catch((error) => console.log(error));
   }
 
+
+
   console.log(forecast)
   return (
     <div>
       <Header />
       <div className='dash-container'>
-        <Info />
+        <div className='info-iu-container'>
+          <IU counter={iuCount} />
+          <Info />
+        </div>
         <Calendarr />
       </div>
       <div className='hero-section'>
         <div className="weather-container">
+          <Inputs setIuCount={setIuCount} />
           <Search onSearch={onSearchChangesHandler} />
           <>
             {weather && <PresentWeather data={weather} />}

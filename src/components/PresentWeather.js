@@ -1,5 +1,4 @@
 import './PresentWeather.css'
-import Inputs from './Inputs'
 
 
 export default function PresentWeather({ data }) {
@@ -24,7 +23,6 @@ export default function PresentWeather({ data }) {
           </div>
         </div>
       </div>
-      <Inputs />
     </div>
   )
 }

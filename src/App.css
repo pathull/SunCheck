@@ -3,13 +3,13 @@
 @import "../node_modules/@syncfusion/ej2-react-calendars/styles/material.css";
 
 .weather-container {
-  max-width: 90%;
+  max-width: 75%;
   margin: auto;
   background-color: #fffad7;
 }
 
 .dash-container {
-  max-width: 90%;
+  max-width: 75%;
   margin: auto;
   margin-bottom: 1rem;
   background-color: #fff;
@@ -20,4 +20,11 @@
   box-shadow: 0 1px 1px rgba(28, 27, 27, 0.025),
     0 2px 2px hsl(0deg 0% 0% / 0.05), 0 3.2px 3.2px hsl(0deg 0% 0% / 0.05),
     0 4px 4px hsl(0deg 0% 0% / 0.05), 0 10px 10px hsl(0deg 0% 0% / 0.05);
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.info-iu-container {
+  display: flex;
+  align-items: center;
 }

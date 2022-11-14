@@ -1,13 +1,16 @@
 .info-container {
-  width: 600px;
+  width: 35%;
   padding-left: 2.2rem;
 }
 
 .info {
   margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 li {
-  margin-bottom: 10px;
+  margin-bottom: 11px;
   list-style: circle;
+  font-size: 12px;
 }

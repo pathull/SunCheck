@@ -1,13 +1,19 @@
 import React from 'react'
 import './Inputs.css'
 
-export default function Inputs() {
+export default function Inputs({ setIuCount }) {
+
+  const maxLengthCheck = (e) => {
+    if (e.target.value.length > e.target.maxLength) {
+      e.target.value = e.target.value.slice(0, e.target.maxLength)
+    }
+  }
 
   return (
-    <div className='input-container'>
-      <input type='text' placeholder={'Total Minutes Sun Exposure (10am - 3pm)'} />
-      <input type='text' placeholder={'Total Vitamin-D IUs (ex.supplement, meal)'} />
+    <form className='input-container'>
+      <label>Today's Vitamin-D Consumption (IU)</label>
+      <input maxLength='4' onInput={maxLengthCheck} type='number' onChange={(e) => setIuCount(e.target.value.slice(0, 4))} placeholder={'1000'} />
       <button className='input-btn' type='submit'>Submit</button>
-    </div>
+    </form>
   )
 }

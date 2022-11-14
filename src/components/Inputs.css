@@ -1,10 +1,19 @@
+.input-container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 input {
-  padding: 0.2rem;
-  width: 260px;
+  padding: 0.4rem;
+  width: 320px;
   border-radius: 5px;
   border: none;
   margin-left: 0.7rem;
   border-style: none;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .input-btn {
@@ -12,7 +21,7 @@ input {
   padding: 0.5rem;
   border-radius: 5px;
   border: none;
-  background-color: rgb(255, 144, 26);
+  background-color: orange;
   cursor: pointer;
   font-weight: bold;
 }
