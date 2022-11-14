@@ -9,6 +9,7 @@ import Info from './components/calculations/Info';
 import Calendarr from './components/calculations/Calendar';
 import IU from './components/calculations/IU';
 import Inputs from './components/Inputs';
+import CalendarKey from './components/calculations/CalendarKey';
 
 
 
@@ -43,7 +44,10 @@ function App() {
           <IU counter={iuCount} />
           <Info />
         </div>
-        <Calendarr />
+        <div className='calendar-container'>
+          <CalendarKey />
+          <Calendarr />
+        </div>
       </div>
       <div className='hero-section'>
         <div className="weather-container">

@@ -38,6 +38,7 @@ const Search = ({ onSearch }) => {
         loadOptions={loadOptions}
         onChange={onChangeHandler}
       />
+
     </div>
   )
 }
