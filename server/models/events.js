@@ -3,13 +3,13 @@ const Schema = mongoose.Schema;
 
 const eventSchema = new Schema({
   check: {
-    type: String,
+    type: Number,
     trim: true
   },
-  date: {
-    type: Date,
-    default: new Date().toISOString()
-  },
+  // date: {
+  //   type: Date,
+  //   default: new Date().toISOString()
+  // },
 
 });
 

@@ -14,12 +14,13 @@ exports.postOne = async (req, res) => {
   try {
     const newEvent = new Event({
       check: req.body.check,
-      date: req.body.date,
+      // date: req.body.date,
     });
-
+    console.log({ newEvent })
     await newEvent.save();
     res.status(201);
     res.send(newEvent);
+
   } catch (error) {
     res.sendStatus(400);
   }

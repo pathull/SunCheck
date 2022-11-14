@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Search from './components/search-city';
 import { WEATHER_URL, WEATHER_KEY } from './components/APIs'
@@ -17,6 +17,7 @@ function App() {
   const [weather, setWeather] = useState(null)
   const [forecast, setForecast] = useState(null)
   const [iuCount, setIuCount] = useState(0)
+  const [events, setEvents] = useState([]);
 
   const onSearchChangesHandler = (data) => {
     const [lat, lon] = data.value.split(' ');
@@ -33,6 +34,37 @@ function App() {
       .catch((error) => console.log(error));
   }
 
+  const url = `http://localhost:3001`;
+
+  const getAllEvents = async () => {
+    try {
+      const res = await fetch(url);
+      const result = await res.json();
+      return setEvents(result);
+    } catch (error) {
+      return error
+    }
+  };
+
+  const postEvent = async (event) => {
+    try {
+      await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(event)
+      });
+    } catch (error) {
+      return error
+    }
+    return setEvents((prevEvents) => [...prevEvents, event]);
+  };
+
+  useEffect(() => {
+    getAllEvents();
+  }, []);
+
 
 
   console.log(forecast)
@@ -46,12 +78,12 @@ function App() {
         </div>
         <div className='calendar-container'>
           <CalendarKey />
-          <Calendarr />
+          <Calendarr events={events} />
         </div>
       </div>
       <div className='hero-section'>
         <div className="weather-container">
-          <Inputs setIuCount={setIuCount} />
+          <Inputs setIuCount={setIuCount} postEvent={postEvent} />
           <Search onSearch={onSearchChangesHandler} />
           <>
             {weather && <PresentWeather data={weather} />}
