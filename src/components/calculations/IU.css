@@ -1,3 +1,8 @@
+.box {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
 .iu-container {
   display: flex;
   align-items: center;

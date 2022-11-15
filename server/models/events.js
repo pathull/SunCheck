@@ -6,10 +6,15 @@ const eventSchema = new Schema({
     type: Number,
     trim: true
   },
-  // date: {
-  //   type: Date,
-  //   default: new Date().toISOString()
-  // },
+  activity: {
+    type: String,
+    trim: true
+  },
+  date: {
+    type: Date,
+    default: new Date().toISOString()
+  },
+
 
 });
 

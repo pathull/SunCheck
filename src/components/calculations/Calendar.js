@@ -1,16 +1,16 @@
-// import { useState } from 'react'
-import 'react-calendar/dist/Calendar.css';
-import { Calendar } from 'react-calendar'
+import CalendarKey from './CalendarKey'
 import './Calendar.css'
 
 
-export default function Calendarr({ events }) {
+export default function Calendar({ events }) {
 
 
 
   return (
-    <div className='calendar-container'>
-      <Calendar tileContent={'P'} />
+    <div className='calendar-contains' id='list'>
+      {events.map((event, index) => (
+        <CalendarKey key={index} event={event} events={events} />
+      ))}
     </div>
   )
 }

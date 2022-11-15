@@ -9,10 +9,10 @@ import { WEATHER_URL, WEATHER_KEY } from './components/APIs'
 import PresentWeather from './components/PresentWeather';
 import Forecast from './components/Forecast';
 import Info from './components/calculations/Info';
-import Calendarr from './components/calculations/Calendar';
+import Calendar from './components/calculations/Calendar';
 import IU from './components/calculations/IU';
 import Inputs from './components/Inputs';
-import CalendarKey from './components/calculations/CalendarKey';
+
 
 
 
@@ -84,8 +84,7 @@ function App() {
               <Info />
             </div>
             <div className='calendar-container'>
-              <CalendarKey />
-              <Calendarr events={events} />
+              <Calendar events={events} />
             </div>
           </div>
           <div className='hero-section'>

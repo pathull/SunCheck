@@ -1,3 +1,25 @@
-.calender-key {
-  font-size: 14px;
+.event-single-body {
+  display: flex;
+  gap: 1.5rem;
+  background-color: #fffad7;
+  width: 320px;
+  padding: 0.2rem;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.event-date {
+  color: rgba(0, 0, 0, 0.861);
+}
+
+.event-activity {
+  color: rgba(0, 0, 0, 0.861);
+}
+.event-single {
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+.iu-color {
+  color: rgb(255, 68, 0);
 }

@@ -1,4 +1,3 @@
-import React from 'react'
 import './Inputs.css'
 
 export default function Inputs({ setIuCount, postEvent }) {
@@ -13,8 +12,12 @@ export default function Inputs({ setIuCount, postEvent }) {
   const submitHandler = async (e) => {
     e.preventDefault()
 
+    const date = new Date(e.target.date.value);
+
     const inputed = {
       check: e.target.check.value,
+      date: date.toISOString(),
+      activity: e.target.activity.value
     };
 
     console.log(inputed)
@@ -25,8 +28,9 @@ export default function Inputs({ setIuCount, postEvent }) {
 
   return (
     <form className='input-container' onSubmit={submitHandler}>
-      <label>Today's Vitamin-D Consumption (IU)</label>
-      <input id='iu-input' name='check' maxLength='4' onInput={maxLengthCheck} type='number' onChange={(e) => setIuCount(e.target.value.slice(0, 4))} placeholder={'1000'} />
+      <input id='iu-input' name='check' maxLength='4' onInput={maxLengthCheck} type='number' onChange={(e) => setIuCount(e.target.value.slice(0, 4))} placeholder={'Vitamin-D Estimated IU Consumed'} required />
+      <input id='iu-input' name='activity' maxLength={10} type='text' placeholder={'Activity (ex. walk, supplement)'} required />
+      <input id='iu-input' name='date' type='datetime-local' required />
       <button className='input-btn' type='submit'>Submit</button>
     </form>
   )
