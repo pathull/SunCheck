@@ -3,12 +3,12 @@
   margin-bottom: 1rem;
 }
 
-input {
+#iu-input {
   padding: 0.4rem;
   width: 300px;
+  margin-left: 0.7rem;
   border-radius: 5px;
   border: none;
-  margin-left: 0.7rem;
   border-style: none;
   background-color: #333;
   color: #fff;

@@ -1,5 +1,8 @@
 import './App.css';
 import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Login from './components/login-and-register/Login';
+import Register from './components/login-and-register/Register';
 import Header from './components/Header';
 import Search from './components/search-city';
 import { WEATHER_URL, WEATHER_KEY } from './components/APIs'
@@ -10,6 +13,7 @@ import Calendarr from './components/calculations/Calendar';
 import IU from './components/calculations/IU';
 import Inputs from './components/Inputs';
 import CalendarKey from './components/calculations/CalendarKey';
+
 
 
 
@@ -69,29 +73,34 @@ function App() {
 
   console.log(forecast)
   return (
-    <div>
-      <Header />
-      <div className='dash-container'>
-        <div className='info-iu-container'>
-          <IU counter={iuCount} />
-          <Info />
-        </div>
-        <div className='calendar-container'>
-          <CalendarKey />
-          <Calendarr events={events} />
-        </div>
-      </div>
-      <div className='hero-section'>
-        <div className="weather-container">
-          <Inputs setIuCount={setIuCount} postEvent={postEvent} />
-          <Search onSearch={onSearchChangesHandler} />
-          <>
-            {weather && <PresentWeather data={weather} />}
-            {forecast && <Forecast data={forecast} />}
-          </>
-        </div>
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/login' element={<><Header /><Login /></>} />
+        <Route path='/register' element={<><Header /><Register /></>} />
+        <Route path='/' element={<><Header />
+          <div className='dash-container'>
+            <div className='info-iu-container'>
+              <IU counter={iuCount} />
+              <Info />
+            </div>
+            <div className='calendar-container'>
+              <CalendarKey />
+              <Calendarr events={events} />
+            </div>
+          </div>
+          <div className='hero-section'>
+            <div className="weather-container">
+              <Inputs setIuCount={setIuCount} postEvent={postEvent} />
+              <Search onSearch={onSearchChangesHandler} />
+              <>
+                {weather && <PresentWeather data={weather} />}
+                {forecast && <Forecast data={forecast} />}
+              </>
+            </div>
+          </div></>} />
+      </Routes>
+    </Router>
+
   );
 }
 

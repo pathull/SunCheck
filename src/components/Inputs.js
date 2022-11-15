@@ -26,7 +26,7 @@ export default function Inputs({ setIuCount, postEvent }) {
   return (
     <form className='input-container' onSubmit={submitHandler}>
       <label>Today's Vitamin-D Consumption (IU)</label>
-      <input name='check' maxLength='4' onInput={maxLengthCheck} type='number' onChange={(e) => setIuCount(e.target.value.slice(0, 4))} placeholder={'1000'} />
+      <input id='iu-input' name='check' maxLength='4' onInput={maxLengthCheck} type='number' onChange={(e) => setIuCount(e.target.value.slice(0, 4))} placeholder={'1000'} />
       <button className='input-btn' type='submit'>Submit</button>
     </form>
   )
