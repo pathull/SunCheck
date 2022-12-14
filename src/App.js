@@ -9,7 +9,7 @@ import { WEATHER_URL, WEATHER_KEY } from './components/APIs'
 import PresentWeather from './components/PresentWeather';
 import Forecast from './components/Forecast';
 import Info from './components/calculations/Info';
-import Calendar from './components/calculations/Calendar';
+import List from './components/calculations/List';
 import IU from './components/calculations/IU';
 import Inputs from './components/Inputs';
 
@@ -84,7 +84,7 @@ function App() {
               <Info />
             </div>
             <div className='calendar-container'>
-              <Calendar events={events} />
+              <List events={events} />
             </div>
           </div>
           <div className='hero-section'>

@@ -1,6 +1,6 @@
-import './CalendarKey.css'
+import './ListKey.css'
 
-export default function CalendarKey({ event }) {
+export default function ListKey({ event }) {
 
 
   const date = (date) => {

@@ -1,8 +1,8 @@
-import CalendarKey from './CalendarKey'
-import './Calendar.css'
+import CalendarKey from './ListKey'
+import './List.css'
 
 
-export default function Calendar({ events }) {
+export default function List({ events }) {
 
 
 
