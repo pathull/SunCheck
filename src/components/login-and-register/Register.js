@@ -1,8 +1,7 @@
-import './Register.css'
+import './Register.css';
 import React, { Component } from 'react';
 
 export default class SignUp extends Component {
-
   constructor(props) {
     super(props);
 
@@ -10,43 +9,41 @@ export default class SignUp extends Component {
       firstname: '',
       lastname: '',
       email: '',
-      password: '',
-    }
-    this.handleSubmit = this.handleSubmit.bind(this)
+      password: ''
+    };
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleSubmit(event) {
     event.preventDefault();
     const { firstname, lastname, email, password } = this.state;
-    console.log(firstname, lastname, email, password)
+    console.log(firstname, lastname, email, password);
     fetch('http://localhost:3001/register', {
       method: 'POST',
       crossDomain: true,
       headers: {
         'Content-Type': 'application/json',
         Accept: 'application/json',
-        'Access-Control-Allow-Origin': '*',
-
+        'Access-Control-Allow-Origin': '*'
       },
       body: JSON.stringify({
         firstname,
         lastname,
         email,
         password
-      }),
+      })
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data, 'userRegister')
-      })
+        console.log(data, 'userRegister');
+      });
   }
-
 
   render() {
     return (
-      <div className='background'>
-        <form className='form-contains' onSubmit={this.handleSubmit} >
-          <h3 className='form-top-title'>Register</h3>
+      <div className="background">
+        <form className="form-contains" onSubmit={this.handleSubmit}>
+          <h3 className="form-top-title">Register</h3>
 
           <div className="section">
             <label>First name</label>
@@ -60,8 +57,13 @@ export default class SignUp extends Component {
 
           <div className="section">
             <label>Last name</label>
-            <input type="text" className="form-control" placeholder="Last name" name='lname' onChange={(event) => this.setState({ lastname: event.target.value })} />
-
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Last name"
+              name="lname"
+              onChange={(event) => this.setState({ lastname: event.target.value })}
+            />
           </div>
 
           <div className="section">
@@ -70,7 +72,7 @@ export default class SignUp extends Component {
               type="email"
               className="form-control"
               placeholder="Enter email"
-              name='email'
+              name="email"
               onChange={(event) => this.setState({ email: event.target.value })}
             />
           </div>
@@ -81,7 +83,7 @@ export default class SignUp extends Component {
               type="password"
               className="form-control"
               placeholder="Enter password"
-              name='password'
+              name="password"
               onChange={(event) => this.setState({ password: event.target.value })}
             />
           </div>
@@ -96,7 +98,6 @@ export default class SignUp extends Component {
           </p>
         </form>
       </div>
-    )
-  };
-
+    );
+  }
 }

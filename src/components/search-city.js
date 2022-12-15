@@ -1,33 +1,35 @@
-import { AsyncPaginate } from "react-select-async-paginate"
-import { useState } from "react"
-import { CITY_SEARCH_URL, cityApiGet } from './APIs'
-
+import { AsyncPaginate } from 'react-select-async-paginate';
+import { useState } from 'react';
+import { CITY_SEARCH_URL, cityApiGet } from './APIs';
 
 export const Search = ({ onSearch }) => {
-  const [searchCity, setSearchCity] = useState(null)
+  const [searchCity, setSearchCity] = useState(null);
 
   const loadOptions = async (input) => {
     try {
-      const response = await fetch(`${CITY_SEARCH_URL}/cities?countryIds=US&namePrefix=${input}`, cityApiGet)
-      const responseTwo = await response.json()
+      const response = await fetch(
+        `${CITY_SEARCH_URL}/cities?countryIds=US&namePrefix=${input}`,
+        cityApiGet
+      );
+      const responseTwo = await response.json();
       return {
         options: responseTwo.data.map((cities) => {
           return {
             label: `${cities.name}, ${cities.countryCode}`,
-            value: `${cities.latitude} ${cities.longitude}`,
-          }
+            value: `${cities.latitude} ${cities.longitude}`
+          };
         })
-      }
+      };
     } catch (err) {
-      return console.error(err)
+      return console.error(err);
     }
-  }
+  };
 
   const onChangeHandler = (data) => {
     setSearchCity(data);
     onSearch(data);
-  }
-console.log(searchCity)
+  };
+  console.log(searchCity);
   return (
     <div className="searchBar">
       <AsyncPaginate
@@ -39,7 +41,7 @@ console.log(searchCity)
         onChange={onChangeHandler}
       />
     </div>
-  )
-}
+  );
+};
 
-export default Search
+export default Search;

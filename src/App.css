@@ -1,6 +1,6 @@
-@import "../node_modules/@syncfusion/ej2-base/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-buttons/styles/material.css";
-@import "../node_modules/@syncfusion/ej2-react-calendars/styles/material.css";
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-react-calendars/styles/material.css';
 
 .weather-container {
   max-width: 80%;
@@ -17,9 +17,9 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 10px;
-  box-shadow: 0 1px 1px rgba(28, 27, 27, 0.025),
-    0 2px 2px hsl(0deg 0% 0% / 0.05), 0 3.2px 3.2px hsl(0deg 0% 0% / 0.05),
-    0 4px 4px hsl(0deg 0% 0% / 0.05), 0 10px 10px hsl(0deg 0% 0% / 0.05);
+  box-shadow: 0 1px 1px rgba(28, 27, 27, 0.025), 0 2px 2px hsl(0deg 0% 0% / 0.05),
+    0 3.2px 3.2px hsl(0deg 0% 0% / 0.05), 0 4px 4px hsl(0deg 0% 0% / 0.05),
+    0 10px 10px hsl(0deg 0% 0% / 0.05);
   padding-left: 1rem;
   margin-top: 1rem;
 }

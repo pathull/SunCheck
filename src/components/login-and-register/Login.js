@@ -1,49 +1,50 @@
-import './Login.css'
-import React, { Component } from 'react'
+import './Login.css';
+import React, { Component } from 'react';
 
 export default class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
       email: '',
-      password: '',
-    }
+      password: ''
+    };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleSubmit(e) {
     e.preventDefault();
     const { email, password } = this.state;
-    console.log(email, password)
+    console.log(email, password);
     fetch('http://localhost:3001/login', {
       method: 'POST',
       crossDomain: true,
       headers: {
         'Content-Type': 'application/json',
         Accept: 'application/json',
-        'Access-Control-Allow-Origin': '*',
-
+        'Access-Control-Allow-Origin': '*'
       },
       body: JSON.stringify({
         email,
         password
-      }),
+      })
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data, 'userRegister')
-      })
+        console.log(data, 'userRegister');
+      });
   }
 
   render() {
     return (
-      <div className='background'>
-        <span className='info-login'>Approximately 1 billion people worldwide are affected with vitamin-D deficiency and around 50% of the global population have vitamin D insufficiency</span>
-        <form className='form-contains' onSubmit={this.handleSubmit}>
-          <h3 className='form-top-title'>Sign In</h3>
+      <div className="background">
+        <span className="info-login">
+          Approximately 1 billion people worldwide are affected with vitamin-D deficiency and around
+          50% of the global population have vitamin D insufficiency
+        </span>
+        <form className="form-contains" onSubmit={this.handleSubmit}>
+          <h3 className="form-top-title">Sign In</h3>
 
           <div className="section">
-
             <input
               type="email"
               className="form-control"
@@ -53,7 +54,6 @@ export default class Login extends Component {
           </div>
 
           <div className="section">
-
             <input
               type="password"
               className="form-control"
@@ -64,11 +64,7 @@ export default class Login extends Component {
 
           <div className="seciton">
             <div className="custom-control custom-checkbox">
-              <input
-                type="checkbox"
-                className="custom-control-input"
-                id="customCheck1"
-              />
+              <input type="checkbox" className="custom-control-input" id="customCheck1" />
               <label className="custom-control-label" htmlFor="customCheck1">
                 Remember me
               </label>
@@ -81,11 +77,13 @@ export default class Login extends Component {
             </button>
           </div>
           <p className="forgot-password text-right">
-            Need to <a href="/register" className='link-tag'>register?</a>
+            Need to{' '}
+            <a href="/register" className="link-tag">
+              register?
+            </a>
           </p>
-        </form >
+        </form>
       </div>
-    )
+    );
   }
 }
-
