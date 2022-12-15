@@ -3,31 +3,31 @@ import { useState } from "react"
 import { CITY_SEARCH_URL, cityApiGet } from './APIs'
 
 
-const Search = ({ onSearch }) => {
+export const Search = ({ onSearch }) => {
   const [searchCity, setSearchCity] = useState(null)
 
-  const loadOptions = (input) => {
-    return fetch(`${CITY_SEARCH_URL}/cities?minPopulation=1000000&namePrefix=${input}`, cityApiGet)
-      .then(response => response.json())
-      .then((response) => {
-        return {
-          options: response.data.map((cities) => {
-            return {
-              label: `${cities.name}, ${cities.countryCode}`,
-              value: `${cities.latitude} ${cities.longitude}`,
-
-            }
-          })
-        }
-      })
-      .catch(err => console.error(err));
+  const loadOptions = async (input) => {
+    try {
+      const response = await fetch(`${CITY_SEARCH_URL}/cities?countryIds=US&namePrefix=${input}`, cityApiGet)
+      const responseTwo = await response.json()
+      return {
+        options: responseTwo.data.map((cities) => {
+          return {
+            label: `${cities.name}, ${cities.countryCode}`,
+            value: `${cities.latitude} ${cities.longitude}`,
+          }
+        })
+      }
+    } catch (err) {
+      return console.error(err)
+    }
   }
 
   const onChangeHandler = (data) => {
-    setSearchCity(data)
+    setSearchCity(data);
     onSearch(data);
   }
-
+console.log(searchCity)
   return (
     <div className="searchBar">
       <AsyncPaginate
@@ -38,7 +38,6 @@ const Search = ({ onSearch }) => {
         loadOptions={loadOptions}
         onChange={onChangeHandler}
       />
-
     </div>
   )
 }

@@ -13,10 +13,6 @@ import List from './components/calculations/List';
 import IU from './components/calculations/IU';
 import Inputs from './components/Inputs';
 
-
-
-
-
 function App() {
   const [weather, setWeather] = useState(null)
   const [forecast, setForecast] = useState(null)
