@@ -12,6 +12,7 @@ import Info from './components/calculations/Info';
 import List from './components/calculations/List';
 import IU from './components/calculations/IU';
 import Inputs from './components/Inputs';
+import FormList from './components/form/FormList';
 
 function App() {
   const [weather, setWeather] = useState(null);
@@ -67,9 +68,9 @@ function App() {
 
   useEffect(() => {
     getAllEvents();
+    // eslint-disable-next-line
   }, []);
 
-  console.log(forecast);
   return (
     <Router>
       <Routes>
@@ -101,7 +102,8 @@ function App() {
                   <IU counter={iuCount} />
                   <Info />
                 </div>
-                <div className="calendar-container">
+                <div className="list-form-container">
+                  <FormList />
                   <List events={events} />
                 </div>
               </div>

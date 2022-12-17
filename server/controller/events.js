@@ -7,7 +7,7 @@ const JWT_SECRET = 'hello54321hello';
 
 exports.getAllEvents = async (req, res) => {
   try {
-    let allEvents = await Event.find({});
+    let allEvents = await (await Event.find({}).sort({ date: 'desc' })).reverse();
     res.status(201);
     res.send(allEvents);
   } catch (error) {

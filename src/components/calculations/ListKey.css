@@ -1,7 +1,9 @@
 .event-single-body {
   display: flex;
-  gap: 1.5rem;
+  align-items: center;
+  text-align: justify;
   background-color: #fffad7;
+  gap: 1.5rem;
   width: 320px;
   padding: 0.2rem;
   border-radius: 10px;
@@ -23,3 +25,10 @@
 .iu-color {
   color: rgb(255, 68, 0);
 }
+
+/* .list-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 200px;
+} */

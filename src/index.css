@@ -9,9 +9,9 @@
     1) font color: #3c250c
 */
 
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 * {
   padding: 0;
