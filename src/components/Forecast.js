@@ -26,7 +26,6 @@ export default function Forecast({ data }) {
     }
   };
 
-  console.log(forecastedDays);
   return (
     <>
       <Accordion allowZeroExpanded>

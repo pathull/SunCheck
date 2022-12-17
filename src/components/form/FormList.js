@@ -23,7 +23,7 @@ const FormList = () => {
       <div className="container mb-4 mt-4 p-3">
         <div className="row">
           <button className="btn btn-primary" onClick={() => generatePDF(formEvents)}>
-            Generate Full Report
+            Generate PDF Report
           </button>
         </div>
       </div>
