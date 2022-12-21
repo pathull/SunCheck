@@ -28,6 +28,16 @@ cd suncheck
 npm install
 ```
 
+3. Run front end
+```powershell
+npm start
+```
+
+4. Run server
+```powershell
+nodemon
+```
+
 ## Build with
 ### Backend
 * [Express](https://expressjs.com/) - Express is a minimal and flexible Node.js web application framework
