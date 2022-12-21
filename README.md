@@ -1,15 +1,15 @@
-# Crafters Social Media App
+# SunCheck Health App
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/94504789/208973620-088d944a-957a-4b3c-be8e-da44850ace58.png" width="200" height="200" />
 </p>
 
-Crafters is a social media app aimed at helping local crafters to show and share their personal hand made work to the rest of the world, with the possibility to sell their project and make money of it.
+SunCheck is a health app that let's users check the weather in their city and track estimated Vitamin-D consumption. Users can export a report for personal record keeping or to send to a health provider. 
 
 ## Screenshots
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/66889974/206877619-d43e29d1-74f8-46c4-a1ec-d49a4747d367.png" />
+  <img src="https://user-images.githubusercontent.com/94504789/208974676-493c3d63-24ee-4703-8510-3aab1f98c93b.jpg" />
 
   <img src="https://user-images.githubusercontent.com/66889974/206879053-a53cd71d-d0c3-4c7b-96ca-67ccd45bf1e8.png" />
 
