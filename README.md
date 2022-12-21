@@ -28,13 +28,14 @@ cd suncheck
 npm install
 ```
 
-3. Run front end
+3. Run client
 ```powershell
 npm start
 ```
 
 4. Run server
 ```powershell
+cd server
 nodemon
 ```
 
