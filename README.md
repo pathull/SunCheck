@@ -4,7 +4,7 @@
 <img src="https://user-images.githubusercontent.com/94504789/208973620-088d944a-957a-4b3c-be8e-da44850ace58.png" width="200" height="200" />
 </p>
 
-SunCheck is a health app that let's users search the weather in their city and track estimated Vitamin-D consumption. Users can export a report for personal record keeping or to send to a health provider. 
+SunCheck is a health app that let's users search the weather in their city and track their estimated Vitamin-D consumption. Users can export a report for personal record keeping or to send to a health provider. 
 
 ## Screenshots
 
