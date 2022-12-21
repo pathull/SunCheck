@@ -11,9 +11,9 @@ SunCheck is a health app that let's users check the weather in their city and tr
 <p align="center">
   <img src="https://user-images.githubusercontent.com/94504789/208974676-493c3d63-24ee-4703-8510-3aab1f98c93b.jpg" />
 
-  <img src="https://user-images.githubusercontent.com/66889974/206879053-a53cd71d-d0c3-4c7b-96ca-67ccd45bf1e8.png" />
-
-  <img src="https://user-images.githubusercontent.com/66889974/206879854-7daf1a53-d0a0-4446-9a37-3a76a6483d69.png" />
+  <img src="https://user-images.githubusercontent.com/94504789/208975000-5d755d7b-4ab5-4c35-8cff-b7d5c774008a.jpg" />
+  
+  <img src="https://user-images.githubusercontent.com/94504789/208975062-17aaf771-670a-48ba-97a4-e5e5883036ff.jpg" />
 </p>
 
 ## Getting started
