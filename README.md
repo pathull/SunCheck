@@ -1,7 +1,7 @@
 # Crafters Social Media App
 
 <p align="center">
-  ![sun](https://user-images.githubusercontent.com/94504789/208973620-088d944a-957a-4b3c-be8e-da44850ace58.png)
+<img src="https://user-images.githubusercontent.com/94504789/208973620-088d944a-957a-4b3c-be8e-da44850ace58.png" />
 </p>
 
 Crafters is a social media app aimed at helping local crafters to show and share their personal hand made work to the rest of the world, with the possibility to sell their project and make money of it.
