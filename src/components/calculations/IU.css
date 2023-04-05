@@ -30,3 +30,33 @@
   max-width: 500px;
   position: relative;
 }
+
+@media (max-width: 767px) {
+  .iu-container {
+    display: flex;
+    align-items: center;
+    max-width: 50px;
+    justify-content: center;
+    gap: 0.5rem;
+    position: absolute;
+    top: 60px;
+    right: 58px;
+  }
+  
+  .circle-bar {
+    width: 150px;
+    height:150px;
+  }
+  
+  .iu {
+    font-size: 15px;
+  }
+  .tag {
+    font-size: 15px;
+  }
+  
+  .box {
+    max-width: 500px;
+    position: relative;
+  }
+}

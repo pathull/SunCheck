@@ -38,7 +38,7 @@ export default function Inputs({ setIuCount, postEvent }) {
       <input
         id="iu-input"
         name="activity"
-        maxLength={10}
+        maxLength={11}
         type="text"
         placeholder={'Activity (ex. walk, supplement)'}
         required

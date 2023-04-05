@@ -3,7 +3,7 @@ import './List.css';
 
 export default function List({ events }) {
   return (
-    <div className="calendar-contains" id="list">
+    <div className="listkey-contains" id="list">
       {events.map((event, index) => (
         <ListKey key={index} event={event} events={events} />
       ))}

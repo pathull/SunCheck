@@ -1,6 +1,9 @@
 .item-weather-background {
   background-color: rgb(100, 100, 100);
 }
+.card-content {
+  position:relative;
+}
 
 .icon-weather-forecast {
   width: 50px;
@@ -8,4 +11,10 @@
 
 .forecast-temp {
   font-size: 24px;
+}
+
+.day-box {
+ position: absolute;
+ left: 615px;
+ top: 25px;
 }

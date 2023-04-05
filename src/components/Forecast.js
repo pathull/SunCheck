@@ -39,7 +39,7 @@ export default function Forecast({ data }) {
                       <p className="weather-description">{item.weather[0].description}</p>
                       <p className="forecast-temp">{Math.round(item.main.temp)}°F</p>
                     </div>
-                    <div>
+                    <div className='day-box'>
                       <h4 className="day">{forecastedDays[index]}</h4>
                     </div>
                     <div className="right-content">

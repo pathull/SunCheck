@@ -14,3 +14,22 @@ li {
   list-style: circle;
   font-size: 12px;
 }
+
+@media (max-width: 767px) {
+  .info-container {
+    width: 40%;
+    padding-left: 1rem;
+  }
+  
+  .info {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  li {
+    margin-bottom: 11px;
+    list-style: circle;
+    font-size: 12px;
+  }
+}

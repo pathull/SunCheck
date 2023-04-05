@@ -1,4 +1,4 @@
-.calendar-contains {
+.listkey-contains {
   flex-direction: column;
   padding-right: 1.5rem;
   font-size: 13px;
@@ -14,4 +14,24 @@
   height: 200px;
   margin-right: 1rem;
   border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+  .listkey-contains {
+    flex-direction: column;
+    padding-right: 1.5rem;
+    font-size: 13px;
+    height: 100px;
+    width: 280px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 2rem 1.5rem;
+    height: 200px;
+    margin-right: 1rem;
+    border-radius: 10px;
+  }
 }

@@ -1,10 +1,10 @@
 .event-single-body {
   display: flex;
   align-items: center;
-  text-align: justify;
+  /* justify-content: space-between; */
   background-color: #fff;
   gap: 1.5rem;
-  width: 320px;
+  width: 330px;
   padding: 0.2rem;
   border-radius: 10px;
   border: 2px solid black;
@@ -26,9 +26,24 @@
   color: rgb(255, 68, 0);
 }
 
-/* .list-box {
+.list-box {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  width: 200px;
-} */
+  justify-content: left;
+  width: 140px;
+}
+
+.list-box-2 {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 60px;
+}
+
+.list-box-3 {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 90px;
+}
+
