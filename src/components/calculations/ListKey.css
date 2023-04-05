@@ -47,3 +47,16 @@
   width: 90px;
 }
 
+@media (max-width: 767px) {
+  .event-single-body {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    background-color: #fff;
+    gap: 1.5rem;
+    width: 280px;
+    padding: 0.2rem;
+    border-radius: 10px;
+    border: 2px solid black;
+  }
+}
