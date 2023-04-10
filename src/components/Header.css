@@ -27,14 +27,12 @@
   color: #fff;
 }
 
-
 @media (max-width: 767px) {
-
   .logo-img {
     width: 36px;
     height: 36px;
   }
-  
+
   .header-title {
     color: #fff;
     font-size: 32px;
@@ -43,5 +41,4 @@
   .header-text {
     display: none;
   }
-
-} 
+}

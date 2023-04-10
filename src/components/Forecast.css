@@ -2,7 +2,7 @@
   background-color: rgb(100, 100, 100);
 }
 .card-content {
-  position:relative;
+  position: relative;
 }
 
 .icon-weather-forecast {
@@ -14,7 +14,7 @@
 }
 
 .day-box {
- position: absolute;
- left: 615px;
- top: 25px;
+  position: absolute;
+  left: 615px;
+  top: 25px;
 }
