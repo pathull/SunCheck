@@ -47,4 +47,3 @@ nodemon
 
 ### Frontend
 * [React](https://reactjs.org/) - Front end library for building user interfaces.
-* [Tailwindcss](https://tailwindcss.com/) - CSS Framework to style applications.
